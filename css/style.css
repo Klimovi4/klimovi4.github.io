@@ -23,7 +23,7 @@ header {
 
 .hello {
     position: absolute;
-    top: -65%;
+    top: -58%;
     right: 20vh;
     bottom: 0;
     left: 0;
@@ -39,7 +39,7 @@ hgroup {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 211px;
+    height: 200px;
     margin: auto;
     color: #fff;
     z-index: 2;
@@ -61,17 +61,17 @@ hgroup {
 .about {
     width: 100%;
     height: 100vh;
-    padding: 80px;
+    padding: 80px 0;
     text-align: center;
 }
 
 
 /*--------Glitch animation--------*/
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;  height: 2000px;
 }
 
 .glitch {
@@ -329,6 +329,7 @@ body {
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
+/*-------Конец анимации-------*/
 
 h1 {
     /*text-rendering: optimizelegibili;*/
@@ -343,10 +344,10 @@ p {
 
 .centr{margin: -5% 0% 0% 0%;}
 
-.menu-inline li {
+#menu li {
     display: inline;
-    margin-right: 110px;
-    margin-left: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
     /*vertical-align:middle;*/
 }
 
@@ -356,19 +357,58 @@ li {
     list-style-type: none;
 }
 
-/*-------Анимация верхнего меню--------*/
-.menu-inline{
-  top: 50px; 
-    left: auto;
+/*-------Расположение верхнего меню--------*/
+
+.centr {
+      background-position: 10%, ;
+    position: relative;
+  box-sizing:border-box;
+    float: none;
+
+}
+
+
+nav#menu {
+  margin-top: -60px;
+  background: #1d0c2c;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+}
+
+nav#menu ul {
+  padding: 0%;
+   margin: -20px auto;
+  display: inline-block;
+  height: 50px;
+}
+
+nav#menu ul li {
+  float: left;
+  padding: 35px 0px;
+  list-style: none;
+  margin-right: 50px;
+  line-height: 50px;
+    height: 50px;
+margin-top: 5px}
+
+.about {position: fixed;
+    top: -20px;
+z-index: 999;
+}
+/*#menu{
+  top: 40px; 
+
   position: fixed;
   z-index: 999;
- }
+ }*/
 
-.menu-inline a {
+.centr a {
   text-decoration: none;
   color: #fff;
 }
 
+/*-------Анимация верхнего меню--------*/
 .glitch-btn {
   display: inline-block;
   position: absolute;
@@ -392,10 +432,10 @@ li {
   content: "";
   position: absolute;
   left: -15%;
-  top: -10%;
-  background: #fff;
+  top: 10%;
+  background: #1d0c2c;
   width: 3px;
-  height: 120%;
+  height: 80%;
   padding: 0px;
   z-index: -1;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -494,7 +534,7 @@ li {
     opacity: 1;
   }
 }
+/*-------Конец анимации--------*/
 
-.centr {background: #1d0c2c; /*rgba(243,243,243,1);
-    background: linear-gradient(to bottom, rgba(243,243,243,1) 0%, rgba(255,255,255,0) 100%);*/
-padding: 10px, ,}
+.descript p{padding: 0 35px;
+font-size: 14px;}
