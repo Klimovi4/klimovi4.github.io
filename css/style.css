@@ -341,11 +341,11 @@ p {
     font-size: 20px;
 }
 
-.centr{margin: -5% -10% 0% 0%}
+.centr{margin: -5% 0% 0% 0%;}
 
 .menu-inline li {
     display: inline;
-    margin-right: 100px;
+    margin-right: 110px;
     margin-left: 0px;
     /*vertical-align:middle;*/
 }
@@ -355,11 +355,18 @@ li {
     font-weight: 700;
     list-style-type: none;
 }
+
 /*-------Анимация верхнего меню--------*/
+.menu-inline{
+  top: 50px; 
+    left: auto;
+  position: fixed;
+  z-index: 999;
+ }
 
 .menu-inline a {
   text-decoration: none;
-  color: #1d0c2c;
+  color: #fff;
 }
 
 .glitch-btn {
@@ -386,7 +393,7 @@ li {
   position: absolute;
   left: -15%;
   top: -10%;
-  background: #1d0c2c;
+  background: #fff;
   width: 3px;
   height: 120%;
   padding: 0px;
@@ -487,3 +494,7 @@ li {
     opacity: 1;
   }
 }
+
+.centr {background: #1d0c2c; /*rgba(243,243,243,1);
+    background: linear-gradient(to bottom, rgba(243,243,243,1) 0%, rgba(255,255,255,0) 100%);*/
+padding: 10px, ,}
